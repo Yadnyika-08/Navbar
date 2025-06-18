@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft Navbar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .left-section {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            margin-right: 10px;
+        }
+        
+        .logo img {
+            height: 23px;
+        }
+        
+        .nav-items {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .nav-item {
+            font-size: 13px;
+            color: #262626;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+        
+        .nav-item:hover {
+            text-decoration: underline;
+        }
+        
+        .right-section {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .right-item {
+            font-size: 13px;
+            color: #262626;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            white-space: nowrap;
+        }
+        
+        .dropdown::after {
+            content: "▼";
+            font-size: 8px;
+            margin-left: 5px;
+        }
+        
+        .search-icon, .cart-icon, .signin-icon {
+            height: 16px;
+            width: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="left-section">
+            <div class="logo">
+                <img src="https://www.microsoft.com/favicon.ico" alt="Microsoft Logo">
+                <span style="margin-left: 5px; font-weight: 600;">Microsoft</span>
+            </div>
+            <div class="nav-items">
+                <a href="#" class="nav-item">Microsoft 365</a>
+                <a href="#" class="nav-item">Teams</a>
+                <a href="#" class="nav-item">Copilot</a>
+                <a href="#" class="nav-item">Windows</a>
+                <a href="#" class="nav-item">Surface</a>
+                <a href="#" class="nav-item">Xbox</a>
+                <a href="#" class="nav-item">Support</a>
+            </div>
+        </div>
+        
+        <div class="right-section">
+            <a href="#" class="right-item dropdown">All Microsoft</a>
+            <a href="#" class="right-item">
+                <img src="https://cdn-icons-png.flaticon.com/512/54/54481.png" alt="Search" class="search-icon">
+                Search
+            </a>
+            <a href="#" class="right-item">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.HodCJONQYXxQpbfn06vJqgHaHa&pid=Api&P=0&h=180" alt="Cart" class="cart-icon">
+                Cart
+            </a>
+            <a href="#" class="right-item">
+                <img src="https://cdn-icons-png.flaticon.com/512/1144/1144760.png" alt="Sign In" class="signin-icon">
+                Sign in
+            </a>
+        </div>
+    </div>
+</body>
+</html>
